@@ -1,0 +1,154 @@
+:root{
+    --font-legal-primary: 'Poppins', sans-serif; 
+    --font-legal-secondary:'EB Garamond', serif;
+    --bg-legal-primary:#B68C5A;
+    --bg-legal-secondary:#F3F3F3;
+
+}
+h1,h2,h3{
+    font-family: var(--font-legal-secondary);
+    font-weight: 800;
+}
+h4,h5,h6,p{
+    font-family: var(--font-legal-primary);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* common css end */
+/* navbar part start */
+.common-btn {
+    background-color: var(--bg-legal-primary);
+    border: 1px solid var(--bg-legal-primary);
+    transition: all linear .3s;
+    color: #ffffff;
+}
+.common-btn:hover{
+    background-color: #ffffff;
+    border: 1px solid var(--bg-legal-primary);
+    color: #B68C5A;
+}
+nav ul li a{
+    color: var(--bg-legal-secondary);
+}
+/* navbar part end */
+/* banner part start */
+.banner{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    padding: 105px 0;
+    margin-bottom: 120px;
+}
+.banner-text h1{
+    font-size: 72px;
+}
+.banner-text P{
+    color: #E7E7E7;
+}
+.overly{
+    background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
+}
+/* banner part end */
+/* legal-practice part start */
+.legal-practice{
+    margin-bottom: 120px;
+}
+.section-heading{
+    margin-bottom: 64px;
+}
+.section-heading h2{
+    font-size: 40px;
+    color: #414040;
+}
+.section-heading p{
+    color: #707070;
+}
+.practice-item{
+    padding: 50px 70px 70px;
+    transition: all linear .4s;
+}
+.practice-item:hover{
+    background: linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0) 100%);
+
+}
+.practice-item h3{
+    color: #414040;
+}
+.practice-item p{
+    color: #707070;
+}
+.practice-item i{
+    background-color: var(--bg-legal-primary);
+}
+/* legal-practice part end */
+/* client-say part start */
+.client-say{
+    margin-bottom: 120px;
+}
+.client-say .overly{
+    background: rgba(17, 17, 17, 0.8);
+}
+.carousel-item p{
+    color:  #F3F3F3;;
+}
+/* client-say part end */
+/* question-answer part start */
+.question-answer{
+    margin-bottom: 120px;
+}
+.question-answer .accordion-item {
+    background: #F3F3F3;
+}
+.question-answer .accordion-item button{
+    font-size: 24px ;
+    font-weight: 800 ;
+    color:  #414040;
+    background: #F3F3F3;
+}
+.question-answer .accordion-item p{
+    color: #707070;
+}
+/* question-answer part end */
+/* contact part start */
+.contact{
+    margin-bottom: 120px;
+
+}
+.contact-item{
+    background: var(--bg-legal-secondary);
+}
+.contact-item h3{
+    font-size: 24px;
+}
+.contact-item p{
+    color: #707070;
+}
+.contact-form input, textarea{
+    background: var(--bg-legal-secondary);
+}
+/* contact part end */
+/* footer part start */
+.footer{
+    padding: 120px 0;
+}
+.footer-heading{
+    font-size: 24px;
+}
+.footer p , a{
+    color: #CFCFCF;
+}
+/* footer part end */
+
+/* responsive */
+@media only screen and (max-width:576px){
+    .banner-text h1{
+        font-size: 42px;
+    }
+    .banner-text , .section-heading , .footer input{
+        width: 100% !important;
+    }
+}
